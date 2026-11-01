@@ -1,5 +1,5 @@
 /* Service worker: abre offline depois da primeira visita. Mude VERSION para forçar atualização. */
-const VERSION = 'estudos-v1';
+const VERSION = 'estudos-v2';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 const EXT = ['fonts.googleapis.com', 'fonts.gstatic.com', 'cdn.jsdelivr.net'];
 
