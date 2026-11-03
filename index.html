@@ -15,7 +15,7 @@
 <script>(function(){try{var s=JSON.parse(localStorage.getItem("estudos_soldado_pe_v1")||"null");if(s){var e=document.documentElement;if(s.theme)e.setAttribute("data-theme",s.theme);e.setAttribute("data-skin",s.skin||"areia");}}catch(x){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F3EBDD; --panel:#E7DAC5; --card:#FAF6EC; --ink:#2B241C; --muted:#7B6E5B; --line:#D8C9AF;
@@ -613,6 +613,113 @@ html.tt,html.tt *{transition:background-color .4s ease,color .4s ease,border-col
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 html.compact .top .count{order:9;flex:1 1 100%;justify-content:space-between}
 html.compact .top .spacer{flex:1}
+
+/* ================= AREIA (névoa sálvia com vidro) ================= */
+[data-skin="areia"][data-theme="light"]{--bg:#C9D5D2; --panel:rgba(255,255,255,.34); --card:rgba(255,255,255,.58); --ink:#2F3E46; --muted:#587076; --line:rgba(255,255,255,.64); --side:rgba(255,255,255,.50); --sidetxt:#2F3E46; --sidehover:rgba(94,139,126,.20); --sidemuted:#667E85; --accent:#5E8B7E; --btn:#5E8B7E; --btntxt:#FFFFFF; --flip1:#3E5A57; --flip2:#2F4745; --fliptxt:#F1F5F4; --flipshadow:rgba(30,50,48,.30); --red:#C0566B; --yellow:#A98425; --green:#3E7A66; --r:26px; --field:rgba(255,255,255,.58); --modal:rgba(238,245,243,.92); --hole:#DDE7E4; --ttxt:#2F3E46; --tpill:rgba(255,255,255,.62); --t1:linear-gradient(145deg,rgba(232,171,183,.72),rgba(255,255,255,.34)); --t2:linear-gradient(145deg,rgba(167,199,231,.80),rgba(255,255,255,.34)); --t3:linear-gradient(145deg,rgba(241,245,244,.92),rgba(255,255,255,.40)); --t4:linear-gradient(145deg,rgba(130,176,160,.72),rgba(255,255,255,.34)); color-scheme:light; --page:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1600 1000%22 preserveAspectRatio=%22xMidYMid slice%22%3E%3Cdefs%3E%3ClinearGradient id=%22s%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23E3ECEC%22/%3E%3Cstop offset=%221%22 stop-color=%22%23B7CACC%22/%3E%3C/linearGradient%3E%3ClinearGradient id=%22l%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23B9CCCB%22/%3E%3Cstop offset=%221%22 stop-color=%22%239DB5B5%22/%3E%3C/linearGradient%3E%3ClinearGradient id=%22m%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23FFFFFF%22 stop-opacity=%220%22/%3E%3Cstop offset=%22.5%22 stop-color=%22%23FFFFFF%22 stop-opacity=%220.55%22/%3E%3Cstop offset=%221%22 stop-color=%22%23FFFFFF%22 stop-opacity=%220%22/%3E%3C/linearGradient%3E%3Cfilter id=%22b1%22%3E%3CfeGaussianBlur stdDeviation=%2214%22/%3E%3C/filter%3E%3Cfilter id=%22b2%22%3E%3CfeGaussianBlur stdDeviation=%229%22/%3E%3C/filter%3E%3Cfilter id=%22b3%22%3E%3CfeGaussianBlur stdDeviation=%225%22/%3E%3C/filter%3E%3C/defs%3E%3Crect width=%221600%22 height=%221000%22 fill=%22url%28%23s%29%22/%3E%3Cpath filter=%22url%28%23b1%29%22 fill=%22%239DB5BC%22 opacity=%22.75%22 d=%22M-40 560 L170 430 L330 500 L520 360 L700 480 L880 330 L1080 470 L1260 380 L1440 470 L1650 400 L1650 640 L-40 640Z%22/%3E%3Crect y=%22430%22 width=%221600%22 height=%22120%22 fill=%22url%28%23m%29%22/%3E%3Cpath filter=%22url%28%23b2%29%22 fill=%22%2385A1A8%22 opacity=%22.85%22 d=%22M-40 640 L120 520 L300 590 L460 480 L640 600 L820 520 L1010 610 L1190 500 L1380 600 L1650 520 L1650 700 L-40 700Z%22/%3E%3Crect y=%22560%22 width=%221600%22 height=%22110%22 fill=%22url%28%23m%29%22/%3E%3Cpath filter=%22url%28%23b3%29%22 fill=%22%236E8C93%22 opacity=%22.9%22 d=%22M-40 700 L180 610 L360 680 L560 590 L760 690 L980 620 L1200 700 L1420 630 L1650 700 L1650 760 L-40 760Z%22/%3E%3Crect y=%22660%22 width=%221600%22 height=%2290%22 fill=%22url%28%23m%29%22/%3E%3Crect y=%22740%22 width=%221600%22 height=%22270%22 fill=%22url%28%23l%29%22/%3E%3Cpath filter=%22url%28%23b1%29%22 fill=%22%236E8C93%22 opacity=%22.35%22 d=%22M-40 760 L180 850 L360 790 L560 870 L760 780 L980 860 L1200 790 L1420 860 L1650 790 L1650 900 L-40 900Z%22/%3E%3Crect y=%22700%22 width=%221600%22 height=%22110%22 fill=%22url%28%23m%29%22/%3E%3C/svg%3E") center/cover no-repeat;}
+[data-skin="areia"][data-theme="dark"]{--bg:#18262A; --panel:rgba(255,255,255,.07); --card:rgba(255,255,255,.10); --ink:#F1F5F4; --muted:#A9BDBB; --line:rgba(255,255,255,.14); --side:rgba(255,255,255,.09); --sidetxt:#EAF2F0; --sidehover:rgba(143,190,174,.20); --sidemuted:#93AAA8; --accent:#8FBEAE; --btn:#6E9C8E; --btntxt:#FFFFFF; --flip1:#3E5A57; --flip2:#2F4745; --fliptxt:#F1F5F4; --flipshadow:rgba(0,0,0,.45); --red:#E58A9C; --yellow:#D8B45A; --green:#7FC4A8; --r:26px; --field:rgba(255,255,255,.10); --modal:rgba(32,48,52,.92); --hole:#233438; --ttxt:#F1F5F4; --tpill:rgba(255,255,255,.14); --t1:linear-gradient(145deg,rgba(232,171,183,.30),rgba(255,255,255,.07)); --t2:linear-gradient(145deg,rgba(167,199,231,.30),rgba(255,255,255,.07)); --t3:linear-gradient(145deg,rgba(241,245,244,.20),rgba(255,255,255,.06)); --t4:linear-gradient(145deg,rgba(110,156,142,.42),rgba(255,255,255,.07)); color-scheme:dark; --page:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1600 1000%22 preserveAspectRatio=%22xMidYMid slice%22%3E%3Cdefs%3E%3ClinearGradient id=%22s%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%2327393F%22/%3E%3Cstop offset=%221%22 stop-color=%22%231B2A2F%22/%3E%3C/linearGradient%3E%3ClinearGradient id=%22l%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%231E3036%22/%3E%3Cstop offset=%221%22 stop-color=%22%23131F23%22/%3E%3C/linearGradient%3E%3ClinearGradient id=%22m%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%238FB3B0%22 stop-opacity=%220%22/%3E%3Cstop offset=%22.5%22 stop-color=%22%238FB3B0%22 stop-opacity=%220.16%22/%3E%3Cstop offset=%221%22 stop-color=%22%238FB3B0%22 stop-opacity=%220%22/%3E%3C/linearGradient%3E%3Cfilter id=%22b1%22%3E%3CfeGaussianBlur stdDeviation=%2214%22/%3E%3C/filter%3E%3Cfilter id=%22b2%22%3E%3CfeGaussianBlur stdDeviation=%229%22/%3E%3C/filter%3E%3Cfilter id=%22b3%22%3E%3CfeGaussianBlur stdDeviation=%225%22/%3E%3C/filter%3E%3C/defs%3E%3Crect width=%221600%22 height=%221000%22 fill=%22url%28%23s%29%22/%3E%3Cpath filter=%22url%28%23b1%29%22 fill=%22%2335505A%22 opacity=%22.75%22 d=%22M-40 560 L170 430 L330 500 L520 360 L700 480 L880 330 L1080 470 L1260 380 L1440 470 L1650 400 L1650 640 L-40 640Z%22/%3E%3Crect y=%22430%22 width=%221600%22 height=%22120%22 fill=%22url%28%23m%29%22/%3E%3Cpath filter=%22url%28%23b2%29%22 fill=%22%232A4148%22 opacity=%22.85%22 d=%22M-40 640 L120 520 L300 590 L460 480 L640 600 L820 520 L1010 610 L1190 500 L1380 600 L1650 520 L1650 700 L-40 700Z%22/%3E%3Crect y=%22560%22 width=%221600%22 height=%22110%22 fill=%22url%28%23m%29%22/%3E%3Cpath filter=%22url%28%23b3%29%22 fill=%22%231F3238%22 opacity=%22.9%22 d=%22M-40 700 L180 610 L360 680 L560 590 L760 690 L980 620 L1200 700 L1420 630 L1650 700 L1650 760 L-40 760Z%22/%3E%3Crect y=%22660%22 width=%221600%22 height=%2290%22 fill=%22url%28%23m%29%22/%3E%3Crect y=%22740%22 width=%221600%22 height=%22270%22 fill=%22url%28%23l%29%22/%3E%3Cpath filter=%22url%28%23b1%29%22 fill=%22%231F3238%22 opacity=%22.35%22 d=%22M-40 760 L180 850 L360 790 L560 870 L760 780 L980 860 L1200 790 L1420 860 L1650 790 L1650 900 L-40 900Z%22/%3E%3Crect y=%22700%22 width=%221600%22 height=%22110%22 fill=%22url%28%23m%29%22/%3E%3C/svg%3E") center/cover no-repeat;}
+/* ---------- base de vidro (os dois temas) ---------- */
+[data-skin="noite"] body::before,[data-skin="nevoa"] body::before,[data-skin="areia"] body::before{content:'';position:fixed;inset:0;z-index:-1;background:var(--page);pointer-events:none}
+[data-skin="noite"] .side,[data-skin="nevoa"] .side,[data-skin="areia"] .side{background:var(--side);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);border:1px solid var(--line)}
+[data-skin="noite"] .pillbox,[data-skin="nevoa"] .pillbox,[data-skin="noite"] .count,[data-skin="nevoa"] .count,[data-skin="areia"] .pillbox,[data-skin="areia"] .count{background:var(--panel);border:1px solid var(--line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+[data-skin="noite"] .panel,[data-skin="nevoa"] .panel,[data-skin="noite"] .panel.w,[data-skin="nevoa"] .panel.w,[data-skin="noite"] .tile,[data-skin="nevoa"] .tile,[data-skin="noite"] .col,[data-skin="nevoa"] .col,[data-skin="noite"] .lane,[data-skin="nevoa"] .lane,[data-skin="areia"] .panel,[data-skin="areia"] .panel.w,[data-skin="areia"] .tile,[data-skin="areia"] .col,[data-skin="areia"] .lane{-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+[data-skin="noite"] .panel,[data-skin="nevoa"] .panel,[data-skin="noite"] .col,[data-skin="nevoa"] .col,[data-skin="noite"] .lane,[data-skin="nevoa"] .lane,[data-skin="areia"] .panel,[data-skin="areia"] .col,[data-skin="areia"] .lane{border:1px solid var(--line)}
+[data-skin="noite"] .tile,[data-skin="nevoa"] .tile,[data-skin="areia"] .tile{color:var(--ttxt);border:1px solid var(--line)}
+[data-skin="noite"] .tile .s,[data-skin="nevoa"] .tile .s,[data-skin="areia"] .tile .s{background:var(--tpill);color:var(--ttxt)}
+[data-skin="noite"] .t-pink,[data-skin="nevoa"] .t-pink,[data-skin="areia"] .t-pink{background:var(--t1)}
+[data-skin="noite"] .t-blue,[data-skin="nevoa"] .t-blue,[data-skin="areia"] .t-blue{background:var(--t2)}
+[data-skin="noite"] .t-yellow,[data-skin="nevoa"] .t-yellow,[data-skin="areia"] .t-yellow{background:var(--t3)}
+[data-skin="noite"] .t-mint,[data-skin="nevoa"] .t-mint,[data-skin="areia"] .t-mint{background:var(--t4)}
+[data-skin="noite"] .donut div,[data-skin="nevoa"] .donut div,[data-skin="noite"] .dgrid .donut div,[data-skin="nevoa"] .dgrid .donut div,[data-skin="areia"] .donut div,[data-skin="areia"] .dgrid .donut div{background:var(--hole)}
+[data-skin="noite"] .inp,[data-skin="nevoa"] .inp,[data-skin="noite"] .count input,[data-skin="nevoa"] .count input,[data-skin="noite"] .card select,[data-skin="nevoa"] .card select,[data-skin="noite"] .mbox select,[data-skin="nevoa"] .mbox select,[data-skin="noite"] .mbox input,[data-skin="nevoa"] .mbox input,[data-skin="noite"] .mbox textarea,[data-skin="nevoa"] .mbox textarea,[data-skin="areia"] .inp,[data-skin="areia"] .count input,[data-skin="areia"] .card select,[data-skin="areia"] .mbox select,[data-skin="areia"] .mbox input,[data-skin="areia"] .mbox textarea{background-color:var(--field);border-color:var(--line)}
+[data-skin="noite"] #modal,[data-skin="nevoa"] #modal,[data-skin="areia"] #modal{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+[data-skin="noite"] .mbox,[data-skin="nevoa"] .mbox,[data-skin="areia"] .mbox{background:var(--modal);border:1px solid var(--line);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px)}
+[data-skin="noite"] .tabs,[data-skin="nevoa"] .tabs,[data-skin="areia"] .tabs{padding:8px 10px 14px;margin:-6px -10px -2px}
+[data-skin="noite"] .col.today,[data-skin="nevoa"] .col.today,[data-skin="areia"] .col.today{box-shadow:inset 0 0 0 2px var(--accent)}
+[data-skin="noite"] .focus .btn.ghost,[data-skin="nevoa"] .focus .btn.ghost,[data-skin="areia"] .focus .btn.ghost{box-shadow:none}
+
+
+[data-skin="areia"] .side{box-shadow:0 18px 40px -16px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.5)}
+[data-skin="areia"] .nav a.on{background:var(--btn);color:var(--btntxt);box-shadow:0 4px 14px -4px rgba(0,0,0,.35)}
+[data-skin="areia"] .panel,[data-skin="areia"] .col,[data-skin="areia"] .lane,[data-skin="areia"] .tile{border-radius:26px;box-shadow:0 18px 36px -20px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.5)}
+[data-skin="areia"] .card{border-radius:18px}
+[data-skin="areia"] .btn{background:var(--btn);color:var(--btntxt);box-shadow:0 4px 14px -4px rgba(0,0,0,.30),inset 0 0 0 1px rgba(255,255,255,.65)}
+[data-skin="areia"] .btn.ghost{background:var(--panel);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] .btn.danger{background:var(--red);color:#fff;box-shadow:none}
+[data-skin="areia"] .tabs button{background:var(--panel);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] .tabs button.on,[data-skin="areia"] .seg button.on{background:var(--btn);color:var(--btntxt);box-shadow:0 4px 14px -4px rgba(0,0,0,.35)}
+[data-skin="areia"] .seg{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] h1{font-weight:600;letter-spacing:-.02em}
+[data-skin="areia"] .flip{box-shadow:0 14px 30px var(--flipshadow),inset 0 1px 0 rgba(255,255,255,.14)}
+[data-skin="areia"] #modal{background:rgba(30,28,26,.38)}
+[data-skin="areia"] .mbox{box-shadow:0 30px 80px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.5)}
+[data-skin="areia"] .zicon,[data-skin="areia"] .ficon{box-shadow:0 0 0 1px rgba(255,255,255,.28),0 18px 40px rgba(0,0,0,.40)}
+html[data-skin="areia"].compact .side{left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));padding:6px;border-radius:30px}
+@media (min-width:900px){
+  html[data-skin="areia"].compact .side{left:50%;right:auto;width:min(880px,calc(100% - 40px));transform:translateX(-50%)}
+}
+[data-skin="areia"] .focus{--side:#18181B;--sidetxt:#F1F1F3;--sidemuted:#9C9CA5;--sidehover:rgba(255,255,255,.14)}
+[data-skin="areia"] .focus.on{background:radial-gradient(ellipse 70% 45% at 15% 5%,rgba(255,255,255,.14),transparent 62%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(160,120,80,.26),transparent 62%),linear-gradient(180deg,#1E1E21,#111113)}
+[data-skin="areia"] .focus .flip{background:linear-gradient(#3C3C42 50%,#2B2B30 50%);color:#F5F5F7;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+[data-skin="areia"] .focus .btn{background:#F4F4F6;color:#161618}
+[data-skin="areia"] .focus .btn.ghost{background:rgba(255,255,255,.14);color:#F1F1F3;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+[data-skin="areia"] body{font-family:'DM Sans',system-ui,sans-serif}
+[data-skin="areia"] h1,[data-skin="areia"] h2,[data-skin="areia"] h3,[data-skin="areia"] .disp,[data-skin="areia"] button,[data-skin="areia"] .tag,[data-skin="areia"] .nav a,[data-skin="areia"] .brand,[data-skin="areia"] .tile .v,[data-skin="areia"] .pillbox{font-family:'Inter','DM Sans',system-ui,sans-serif}
+[data-skin="areia"] h1{font-weight:700;letter-spacing:-.025em;color:var(--ink)}
+[data-skin="areia"] .welcome .wn{font-style:italic;color:var(--accent)}
+[data-skin="areia"] .btn{background:linear-gradient(180deg,#6F9D8F 0%,#557F72 100%);color:#fff;box-shadow:0 6px 16px -6px rgba(60,100,90,.55),inset 0 1px 0 rgba(255,255,255,.28)}
+[data-skin="areia"] .btn:hover{filter:brightness(1.05)}
+[data-skin="areia"] .btn:active{background:linear-gradient(180deg,#3F5A58,#2F4745)}
+[data-skin="areia"] .btn.ghost{background:var(--panel);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] .btn.danger{background:linear-gradient(180deg,#E58A9C,#C0566B);color:#fff;box-shadow:0 6px 16px -6px rgba(192,86,107,.5)}
+[data-skin="areia"] .btn[disabled]{opacity:.5;filter:saturate(.5);cursor:default}
+[data-skin="areia"] .tabs button,[data-skin="areia"] .seg button{background:var(--panel);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] .tabs button.on,[data-skin="areia"] .seg button.on{background:linear-gradient(180deg,#6F9D8F,#557F72);color:#fff;box-shadow:0 6px 16px -6px rgba(60,100,90,.55)}
+[data-skin="areia"] .nav a.on{background:linear-gradient(180deg,#6F9D8F,#557F72);color:#fff;box-shadow:0 6px 16px -6px rgba(60,100,90,.6)}
+[data-skin="areia"] .nav a.on svg{stroke:#fff}
+[data-skin="areia"] .sgm{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] .sgm .thumb{background:rgba(255,255,255,.75)}
+[data-theme="dark"][data-skin="areia"] .sgm .thumb{background:rgba(255,255,255,.16)}
+[data-skin="areia"] .bar{background:rgba(47,62,70,.14)}
+[data-skin="areia"] .bar i{background:linear-gradient(90deg,#7DAA9C,#5E8B7E)}
+[data-skin="areia"] .imp-alta{background:#E8ABB7}[data-skin="areia"] .imp-media{background:#A7C7E7}[data-skin="areia"] .imp-baixa{background:#B7D6C9}
+[data-skin="areia"] .qalt.ok{background:#B7D6C9}[data-skin="areia"] .qalt.no{background:#EFBCC6}
+[data-skin="areia"] .qalt{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line)}
+[data-skin="areia"] .focus{--side:#1C2E31;--sidetxt:#EAF2F0;--sidemuted:#93AAA8;--sidehover:rgba(255,255,255,.12)}
+[data-skin="areia"] .focus.on{background:radial-gradient(ellipse 70% 45% at 15% 5%,rgba(167,199,231,.20),transparent 62%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(94,139,126,.34),transparent 62%),linear-gradient(180deg,#1F3236,#142226)}
+[data-skin="areia"] .focus .flip{background:linear-gradient(#3B5754 50%,#2C4442 50%);color:#F1F5F4}
+[data-skin="areia"] .focus .btn{background:#F1F5F4;color:#1C2E31}
+[data-skin="areia"] .focus .btn.ghost{background:rgba(255,255,255,.14);color:#EAF2F0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+[data-skin="areia"] .skprev{background-size:cover}
+
+/* ===== simulados e gráficos ===== */
+.vz,.smtbl{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--vzink:#2F3E46;--vzgrid:rgba(47,62,70,.13)}
+:root[data-theme="dark"] .vz{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--vzink:#F1F5F4;--vzgrid:rgba(255,255,255,.12)}
+:root{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4}
+:root[data-theme="dark"]{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181}
+.sgm.many button{padding:9px 2px;font-size:11.5px}
+.smc{background:color-mix(in srgb,var(--c) 22%,var(--card));color:var(--ink);border:1px solid color-mix(in srgb,var(--c) 45%,transparent)}
+.smi{margin-bottom:10px}.smih{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.smm{text-align:right;display:flex;flex-direction:column;line-height:1.1}.smm b{font-family:'Outfit','Inter',sans-serif;font-size:26px}.smm .muted{font-size:11px}
+.smbar{margin:6px 0 10px}.smtm{font-family:'Outfit','Inter',sans-serif;font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
+.smnav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:6px;margin:8px 0 12px}
+.smn{height:34px;border-radius:10px;background:var(--panel);color:var(--ink);font-size:12px;box-shadow:inset 0 0 0 1px var(--line);padding:0}
+.smn.d{background:color-mix(in srgb,var(--accent) 38%,var(--card))}.smn.on{outline:2px solid var(--ink);outline-offset:1px}
+.qalt.sel{background:color-mix(in srgb,var(--accent) 45%,var(--card));box-shadow:inset 0 0 0 2px var(--accent)}
+.smrt{min-height:300px;line-height:1.6;resize:vertical}
+.smrtx{background:var(--panel);border-radius:14px;padding:12px 14px;font-size:13.5px;line-height:1.6;max-height:300px;overflow:auto}
+.smrtot{font-family:'Outfit','Inter',sans-serif;margin-bottom:8px}.smrtot b{font-size:38px;letter-spacing:-1px}
+.smcomp{margin:10px 0}.smul{margin:4px 0 10px;padding-left:20px;font-size:13px}
+.smarea{margin-bottom:10px}.smsc b{font-family:'Outfit','Inter',sans-serif;font-size:26px}.smsc small{color:var(--muted);font-size:12px}
+.smwarn{margin-bottom:10px;font-size:13px}
+.smscr{overflow-x:auto}
+.smtbl{border-collapse:separate;border-spacing:0 6px;min-width:560px}.smtbl td small{display:block;color:var(--muted);font-size:11px}.smtbl td b{font-family:'Outfit','Inter',sans-serif}
+.smtbl th{white-space:nowrap}.smrow{cursor:pointer}.smrow:hover td{outline:0;background:color-mix(in srgb,var(--accent) 18%,var(--panel))}
+.vz{position:relative}.vz svg{width:100%;height:auto;display:block;overflow:visible;touch-action:pan-y}
+.vzg{stroke:var(--vzgrid);stroke-width:1}.vzt{font-size:11px;fill:var(--muted);font-family:'DM Sans',sans-serif}.vzl2{font-size:10.5px;fill:var(--muted);font-weight:600}
+.vzp{stroke:var(--card);stroke-width:2}.vz-cross{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.vzleg{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0 0 8px;font-size:12px;color:var(--ink)}.vzlg{display:inline-flex;align-items:center;gap:6px}.vzlg i{display:inline-block;width:14px;height:3px;border-radius:2px}
+.vz-tip{display:none;position:absolute;top:34px;transform:translateX(-50%);background:var(--modal);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:8px 10px;font-size:12px;min-width:150px;pointer-events:none;box-shadow:0 10px 24px rgba(0,0,0,.18);z-index:3;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.vz-tip b{display:block;margin-bottom:3px}.vz-tip div{display:flex;align-items:center;gap:6px;white-space:nowrap}.vz-tip div b{display:inline;margin:0 0 0 auto;padding-left:10px}.vz-tip i{width:9px;height:9px;border-radius:50%;display:inline-block}
 </style>
 </head>
 <body>
@@ -1110,9 +1217,10 @@ html.compact .top .spacer{flex:1}
   var MONTHS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
   var PAGES = [
     ['home', 'Início', 'home'], ['plan', 'Planejamento', 'kanban'], ['cycles', 'Ciclos de estudo', 'cycle'],
-    ['subjects', 'Matérias', 'book'], ['ind', 'Análise', 'pie'], ['timer', 'Foco e tempo', 'stopwatch'], ['qs', 'Questões', 'list'], ['cards', 'Flashcards', 'cards'], ['mat', 'Materiais', 'layers']
+    ['subjects', 'Matérias', 'book'], ['ind', 'Análise', 'pie'], ['timer', 'Foco e tempo', 'stopwatch'], ['qs', 'Questões', 'list'], ['sim', 'Simulados', 'exam'], ['cards', 'Flashcards', 'cards'], ['mat', 'Materiais', 'layers']
   ];
   var ICONS = {
+    exam: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3h6v3H9zM8.5 14l2.2 2.2L15.5 11"/>',
     home: '<path d="M3 11l9-8 9 8M5 10v10h14V10"/>', kanban: '<rect x="3" y="3" width="6" height="18" rx="1"/><rect x="12" y="3" width="6" height="11" rx="1"/>',
     cycle: '<path d="M17 2l4 4-4 4M3 11V9a3 3 0 013-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 01-3 3H3"/>', book: '<path d="M4 4h12a3 3 0 013 3v13H7a3 3 0 01-3-3zM4 17a3 3 0 013-3h12"/>',
     chart: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>', clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>', stopwatch: '<circle cx="12" cy="14" r="8"/><path d="M12 10v4l2 2M9 2h6M12 2v4"/>',
@@ -1122,7 +1230,7 @@ html.compact .top .spacer{flex:1}
 
   /* ---------- temas visuais (só estética; não mexe em nenhuma função) ---------- */
   var SKINS = {
-    areia: { name: 'Areia',      desc: 'Bege quente com contrastes suaves. É o visual original.',                     tc: { light: '#F3EBDD', dark: '#1B1612' } },
+    areia: { name: 'Areia',      desc: 'Névoa verde-sálvia com vidro translúcido, cantos suaves e acentos em rosa e azul.', tc: { light: '#C9D5D2', dark: '#18262A' } },
     noite: { name: 'Meia-noite', desc: 'Vidro azul profundo, bordas luminosas e brilho neon nos destaques.',          tc: { light: '#E9F0FA', dark: '#050B18' } },
     nevoa: { name: 'Névoa',      desc: 'Vidro fosco cinza, painéis translúcidos, cantos bem arredondados e botões brancos.', tc: { light: '#CDCAC5', dark: '#161618' } }
   };
@@ -1467,10 +1575,10 @@ html.compact .top .spacer{flex:1}
   }
 
   /* ---------- render ---------- */
-  var FN = { home: pageHome, plan: pagePlan, cycles: pageCycles, subjects: pageSubjects, stats: pageStats, time: pageTime, timer: pageFocus, qs: pageQs, ind: pagePerf, mat: pageMat, cards: pageCards };
+  var FN = { home: pageHome, plan: pagePlan, cycles: pageCycles, subjects: pageSubjects, stats: pageStats, time: pageTime, timer: pageFocus, qs: pageQs, sim: pageSim, ind: pagePerf, mat: pageMat, cards: pageCards };
   function render() {
     var keep = [].map.call(document.querySelectorAll('#page [data-keep]'), function (e) { return e.scrollLeft; });
-    var short = { home: 'Início', plan: 'Plano', cycles: 'Ciclos', subjects: 'Matérias', stats: 'Números', time: 'Tempo', timer: 'Foco', qs: 'Questões', cards: 'Cards', ind: 'Análise', mat: 'Materiais' };
+    var short = { home: 'Início', plan: 'Plano', cycles: 'Ciclos', subjects: 'Matérias', stats: 'Números', time: 'Tempo', timer: 'Foco', qs: 'Questões', cards: 'Cards', ind: 'Análise', mat: 'Materiais', sim: 'Simulados' };
     $('#nav').innerHTML = '<div class="grp">Geral</div>' + PAGES.map(function (p) { return '<a class="' + (S.ui.page === p[0] ? 'on' : '') + '" data-a="nav" data-p="' + p[0] + '">' + ico(p[2]) + (COMPACT ? short[p[0]] : p[1]) + '</a>'; }).join('');
     var hs = document.querySelector('#page .hmscroll'), hsl = hs ? hs.scrollLeft : null;
     $('#page').innerHTML = FN[S.ui.page](); updateBadge(); fcPost(hsl); animPage();
@@ -2861,7 +2969,7 @@ html.compact .top .spacer{flex:1}
   function segHTML(key, items) {
     var cur = TABS()[key], idx = Math.max(0, items.map(function (i) { return i[0]; }).indexOf(cur)), prev = SEGPREV[key];
     if (prev == null) prev = idx; SEGPREV[key] = idx;
-    return '<div class="sgm"><i class="thumb" style="transform:translateX(' + prev * 100 + '%)" data-to="' + idx + '"></i>' +
+    return '<div class="sgm' + (items.length > 3 ? ' many' : '') + '" style="max-width:' + (items.length > 3 ? '100%' : '420px') + '"><i class="thumb" style="width:calc((100% - 6px) / ' + items.length + ');transform:translateX(' + prev * 100 + '%)" data-to="' + idx + '"></i>' +
       items.map(function (it) { return '<button class="' + (it[0] === cur ? 'on' : '') + '" data-pt="' + key + '" data-v="' + it[0] + '">' + it[1] + '</button>'; }).join('') + '</div>';
   }
   function segAnim() {
@@ -2871,8 +2979,8 @@ html.compact .top .spacer{flex:1}
     });
   }
   function pagePerf() {
-    var T = TABS(); if (T.ind !== 'stats') T.ind = 'painel';
-    return '<h1>Análise</h1>' + segHTML('ind', [['painel', 'Visão geral'], ['stats', 'Números']]) + stripH1(T.ind === 'stats' ? pageStats() : pageInd());
+    var T = TABS(); if (T.ind !== 'stats' && T.ind !== 'sim') T.ind = 'painel';
+    return '<h1>Análise</h1>' + segHTML('ind', [['painel', 'Visão geral'], ['stats', 'Números'], ['sim', 'Simulados']]) + (T.ind === 'sim' ? pageSimAnalysis() : stripH1(T.ind === 'stats' ? pageStats() : pageInd()));
   }
   function pageFocus() {
     var T = TABS(); if (S.ui.editLog) T.timer = 'reg'; if (T.timer !== 'reg') T.timer = 'cron';
@@ -3026,7 +3134,7 @@ html.compact .top .spacer{flex:1}
   /* ---------- animações (estilo macOS) ---------- */
   function animPage() {
     var pg = $('#page'), T = TABS(), p = S.ui.page;
-    var key = p + '|' + (p === 'ind' ? T.ind : (p === 'timer' ? T.timer : (p === 'cards' ? fcUI().view : '')));
+    var key = p + '|' + (p === 'ind' ? T.ind : (p === 'timer' ? T.timer : (p === 'cards' ? fcUI().view : (p === 'sim' ? String(S.ui.simView || '') + '|' + (S.ui.simView && TABS().simA === 'RED' ? 'r' : '') : ''))));
     if (key !== LASTKEY) {
       var order = PAGES.map(function (x) { return x[0]; }), a = order.indexOf(LASTKEY ? LASTKEY.split('|')[0] : ''), b = order.indexOf(p);
       pg.style.setProperty('--dx', (a < 0 || a === b ? 0 : (b > a ? 28 : -28)) + 'px');
@@ -3040,6 +3148,497 @@ html.compact .top .spacer{flex:1}
   function themeFx() {
     var h = document.documentElement; h.classList.add('tt'); clearTimeout(themeFx.t); themeFx.t = setTimeout(function () { h.classList.remove('tt'); }, 600);
   }
+
+  /* =====================================================================
+     SIMULADOS ENEM · TRI (3PL + EAP) · REDAÇÃO · EVOLUÇÃO NA ANÁLISE
+     ===================================================================== */
+  var SAR = {
+    LC: { s: 'Linguagens', n: 'Linguagens, Códigos e suas Tecnologias', v: '--s1' },
+    CH: { s: 'Humanas', n: 'Ciências Humanas e suas Tecnologias', v: '--s2' },
+    CN: { s: 'Natureza', n: 'Ciências da Natureza e suas Tecnologias', v: '--s3' },
+    MT: { s: 'Matemática', n: 'Matemática e suas Tecnologias', v: '--s4' }
+  };
+  var SIMX = { busy: '', err: '', msg: '', years: null, yl: false }, SQ = {}, SQL = {}, TRID = null, VZD = {}, SMT = 0, TRI_D = 1;
+  var YFALL = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009];
+
+  function SIM() { return S.sim || (S.sim = { list: [] }); }
+  function simRec(id) { return SIM().list.filter(function (x) { return x.id === id; })[0]; }
+  function areaOf(d) {
+    var n = norm(d);
+    if (/lingu|codigo/.test(n)) return 'LC'; if (/human/.test(n)) return 'CH'; if (/natur/.test(n)) return 'CN'; if (/mate/.test(n)) return 'MT';
+    return null;
+  }
+  function simNorm(q) {
+    var al = q.alternatives || [], lg = norm(q.language || '');
+    lg = /ing|eng/.test(lg) ? 'ingles' : (/esp|span/.test(lg) ? 'espanhol' : '');
+    return { id: q.index + (lg ? ':' + lg : ''), i: q.index, a: areaOf(q.discipline), lg: lg, t: q.title || '', x: q.context || '', n: q.alternativesIntroduction || '',
+      al: al.map(function (a) { return { l: a.letter, t: a.text || '', f: a.file || '' }; }),
+      k: q.correctAlternative || ((al.filter(function (a) { return a.isCorrect; })[0] || {}).letter) || '' };
+  }
+  function simSt(t) { var s = document.getElementById('sm-status'); if (s) s.textContent = t; }
+
+  /* ---------- provas (api.enem.dev, guardadas no aparelho) ---------- */
+  async function simYears() {
+    if (SIMX.years) return SIMX.years;
+    var c = await kv('get', 'simyears'); if (c && c.length) SIMX.years = c;
+    try {
+      var ex = await getJ('https://api.enem.dev/v1/exams'); ex = Array.isArray(ex) ? ex : (ex.exams || []);
+      var ys = ex.map(function (e) { return e.year; }).filter(Boolean).sort(function (a, b) { return b - a; });
+      if (ys.length) { SIMX.years = ys; kv('set', 'simyears', ys); }
+    } catch (e) {}
+    return SIMX.years || YFALL;
+  }
+  async function simLoadYear(y) {
+    if (SQ[y]) return SQ[y];
+    var c = await kv('get', 'simq' + y); if (c && c.length >= 40) return (SQ[y] = c);
+    var out = [];
+    for (var off = 0; off < 400; off += 50) {
+      simSt('Baixando o ENEM ' + y + '… ' + out.length + ' questões');
+      var j = await getJ('https://api.enem.dev/v1/exams/' + y + '/questions?limit=50&offset=' + off), l = Array.isArray(j) ? j : (j.questions || []);
+      l.forEach(function (q) { out.push(simNorm(q)); });
+      if (l.length < 50 || (j.metadata && j.metadata.hasMore === false)) break;
+      await wait(300);
+    }
+    if (out.length < 40) throw new Error('a prova veio incompleta');
+    out.sort(function (a, b) { return a.i - b.i; });
+    await kv('set', 'simq' + y, out);
+    return (SQ[y] = out);
+  }
+  function simEnsure(y) {
+    if (SQ[y] || SQL[y]) return; SQL[y] = 1;
+    simLoadYear(y).then(function () { SQL[y] = 0; render(); }).catch(function () { SQL[y] = 0; SIMX.err = 'A prova de ' + y + ' não está no aparelho e não consegui baixar. Conecte-se à internet.'; render(); });
+  }
+  function simQs(rec) {
+    return (SQ[rec.year] || []).filter(function (q) { return q.a && q.k && rec.days.indexOf(q.i <= 90 ? 1 : 2) >= 0 && (!q.lg || q.lg === rec.lang); });
+  }
+  function simAreas(rec, all) {
+    var out = []; (all || simQs(rec)).forEach(function (q) { if (out.indexOf(q.a) < 0) out.push(q.a); }); return out;
+  }
+  function simHasRed(rec) {
+    var lc = (SQ[rec.year] || []).filter(function (q) { return q.a === 'LC'; })[0]; if (!lc) return rec.days.indexOf(1) >= 0;
+    return rec.days.indexOf(lc.i <= 90 ? 1 : 2) >= 0;
+  }
+  function simTitle(rec) { return 'ENEM ' + rec.year + ' · ' + (rec.days.length === 2 ? 'Dois dias' : 'Dia ' + rec.days[0]); }
+  function dmy(d) { var p = String(d).split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+
+  /* ---------- TRI: parâmetros oficiais do INEP (ITENS_PROVA) ---------- */
+  async function triGet() { if (TRID) return TRID; TRID = (await kv('get', 'tri')) || { years: {} }; if (!TRID.years) TRID.years = {}; return TRID; }
+  function csvLines(txt) {
+    var rows = [], row = [], f = '', q = false, d = null, i, c;
+    var head = txt.slice(0, txt.indexOf('\n') > 0 ? txt.indexOf('\n') : 400); d = (head.split(';').length >= head.split(',').length) ? ';' : ',';
+    for (i = 0; i < txt.length; i++) {
+      c = txt[i];
+      if (q) { if (c === '"') { if (txt[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === d) { row.push(f); f = ''; }
+      else if (c === '\n') { row.push(f); rows.push(row); row = []; f = ''; }
+      else if (c !== '\r') f += c;
+    }
+    if (f !== '' || row.length) { row.push(f); rows.push(row); }
+    return rows.filter(function (r) { return r.length > 1; });
+  }
+  function median(a) { var s = a.slice().sort(function (x, y) { return x - y; }); return s.length ? s[Math.floor(s.length / 2)] : 0; }
+  function triParse(txt, name) {
+    txt = txt.replace(/^﻿/, '');
+    var R = csvLines(txt); if (R.length < 2) throw new Error('arquivo vazio');
+    var H = R[0].map(function (h) { return h.trim().toUpperCase(); }), ix = function (n) { return H.indexOf(n); };
+    var need = ['SG_AREA', 'CO_POSICAO', 'TX_GABARITO', 'NU_PARAM_A', 'NU_PARAM_B', 'NU_PARAM_C'];
+    for (var n = 0; n < need.length; n++) if (ix(need[n]) < 0) throw new Error('falta a coluna ' + need[n] + '. Use o ITENS_PROVA_AAAA.csv dos microdados');
+    var yc = H.filter(function (h) { return /^(NU_)?ANO(_APLICACAO)?$/.test(h); })[0], my = /(?:19|20)\d\d/.exec(name || ''), year = my ? +my[0] : (yc ? +R[1][ix(yc)] : 0);
+    if (!year) throw new Error('não achei o ano. Mantenha o ano no nome do arquivo');
+    var num = function (s) { var v = parseFloat(String(s == null ? '' : s).replace(',', '.')); return isFinite(v) ? v : null; };
+    var ip = ix('CO_PROVA'), ic = ix('TX_COR'), il = ix('TP_LINGUA'), ia = ix('IN_ITEM_ABAN'), rows = [];
+    R.slice(1).forEach(function (r) {
+      var key = String(r[ix('TX_GABARITO')] || '').trim().toUpperCase(), a = num(r[ix('NU_PARAM_A')]), b = num(r[ix('NU_PARAM_B')]), c = num(r[ix('NU_PARAM_C')]), pos = parseInt(r[ix('CO_POSICAO')], 10);
+      if (!/^[A-E]$/.test(key) || a == null || b == null || c == null || !pos || (ia >= 0 && String(r[ia]).trim() === '1')) return;
+      var lt = il >= 0 ? String(r[il]).trim() : '', lg = lt === '0' ? 'ingles' : (lt === '1' ? 'espanhol' : '');
+      rows.push([ip >= 0 ? String(r[ip]).trim() : '0', ic >= 0 ? String(r[ic]).trim().toUpperCase() : '', String(r[ix('SG_AREA')]).trim().toUpperCase(), pos, key, lg, a, b, c]);
+    });
+    if (rows.length < 40) throw new Error('poucos itens com parâmetros válidos');
+    /* escala: o INEP publica b na escala θ (nota = 500 + 100·b). Se vier na escala da nota, converte. */
+    var mb = median(rows.map(function (r) { return Math.abs(r[7]); })), ma = median(rows.map(function (r) { return r[6]; })), sc = 'theta';
+    if (mb > 20) { sc = 'nota'; rows.forEach(function (r) { r[7] = (r[7] - 500) / 100; if (ma < 0.2) r[6] = r[6] * 100; }); }
+    return { year: year, rows: rows, scale: sc, at: Date.now() };
+  }
+  /* casa as linhas do INEP com as questões da API pelo gabarito, escolhendo o caderno que mais bate */
+  function triMap(en, qs) {
+    var qi = {}, byP = {}, best = null;
+    qs.forEach(function (q) { (qi[q.i] = qi[q.i] || []).push(q); });
+    en.rows.forEach(function (r) { (byP[r[0]] = byP[r[0]] || []).push(r); });
+    Object.keys(byP).forEach(function (p) {
+      var rows = byP[p], cnt = {}, seen = {}, hit = 0, tot = 0, pm = {};
+      rows.forEach(function (r) { cnt[r[3]] = (cnt[r[3]] || 0) + 1; });
+      rows.forEach(function (r) {
+        var lg = r[5];
+        if (!lg && cnt[r[3]] > 1) { seen[r[3]] = (seen[r[3]] || 0) + 1; lg = seen[r[3]] === 1 ? 'ingles' : 'espanhol'; }
+        var c = qi[r[3]]; if (!c) return;
+        var q = c.filter(function (x) { return lg ? x.lg === lg : !x.lg; })[0] || (lg ? null : c[0]); if (!q) return;
+        tot++; if (q.k === r[4] && q.a === r[2]) { hit++; pm[q.id] = [r[6], r[7], r[8]]; }
+      });
+      var ratio = tot ? hit / tot : 0, cor = rows[0][1] === 'AZUL' ? 1 : 0;
+      if (!best || ratio > best.ratio + 1e-9 || (Math.abs(ratio - best.ratio) < 1e-9 && cor > best.cor)) best = { p: pm, prova: p, ratio: ratio, tot: tot, hit: hit, cor: cor };
+    });
+    return best && best.tot >= 40 && best.ratio >= 0.8 ? best : null;
+  }
+  /* proficiência por EAP, modelo logístico de 3 parâmetros, priori N(0,1); nota = 500 + 100·θ */
+  function eap(it) {
+    var n = 401, lo = -4, hi = 6, st = (hi - lo) / (n - 1), lw = [], mx = -1e18, g, j, W = 0, M = 0, V = 0;
+    for (g = 0; g < n; g++) {
+      var th = lo + g * st, l = -0.5 * th * th;
+      for (j = 0; j < it.length; j++) {
+        var x = it[j], p = x[2] + (1 - x[2]) / (1 + Math.exp(-TRI_D * x[0] * (th - x[1])));
+        p = Math.min(1 - 1e-9, Math.max(1e-9, p)); l += Math.log(x[3] ? p : 1 - p);
+      }
+      lw[g] = l; if (l > mx) mx = l;
+    }
+    for (g = 0; g < n; g++) { var w = Math.exp(lw[g] - mx), t2 = lo + g * st; W += w; M += w * t2; V += w * t2 * t2; }
+    M /= W; V = V / W - M * M;
+    return { score: 500 + 100 * M, ep: 100 * Math.sqrt(Math.max(V, 0)) };
+  }
+  async function simCompute(rec) {
+    var qs = await simLoadYear(rec.year), all = simQs(rec), tri = await triGet(), en = tri.years[rec.year], map = en ? triMap(en, qs) : null;
+    var res = { at: Date.now(), areas: {}, why: '' };
+    if (!en) res.why = 'Sem parâmetros da TRI para ' + rec.year + '. Importe o ITENS_PROVA_' + rec.year + '.csv do INEP.';
+    else if (!map) res.why = 'Os parâmetros importados de ' + rec.year + ' não bateram com o gabarito desta prova.';
+    else res.prova = map.prova;
+    simAreas(rec, all).forEach(function (a) {
+      var l = all.filter(function (q) { return q.a === a; }), r = { ok: l.filter(function (q) { return rec.ans[q.id] === q.k; }).length, tot: l.length, blank: l.filter(function (q) { return !rec.ans[q.id]; }).length };
+      if (map) {
+        var it = []; l.forEach(function (q) { var p = map.p[q.id]; if (p) it.push([p[0], p[1], p[2], rec.ans[q.id] === q.k ? 1 : 0]); });
+        if (it.length >= 10) { var e = eap(it); r.score = e.score; r.ep = e.ep; r.np = it.length; }
+      }
+      res.areas[a] = r;
+    });
+    rec.res = res; return res;
+  }
+  function redTotal(rec) { var c = rec.red && rec.red.comp; return c ? c.reduce(function (a, b) { return a + b; }, 0) : null; }
+  function simMedia(rec) {
+    var v = [], A = (rec.res && rec.res.areas) || {};
+    ['LC', 'CH', 'CN', 'MT'].forEach(function (a) { if (A[a] && A[a].score != null) v.push(A[a].score); });
+    var rt = redTotal(rec); if (rt != null) v.push(rt);
+    return v.length ? { v: v.reduce(function (a, b) { return a + b; }, 0) / v.length, n: v.length } : null;
+  }
+
+  /* ---------- redação: pedido, leitura da resposta, API ---------- */
+  var COMPS = [
+    'Domínio da modalidade escrita formal da língua portuguesa',
+    'Compreender a proposta de redação e aplicar conceitos de várias áreas do conhecimento para desenvolver o tema, dentro dos limites estruturais do texto dissertativo-argumentativo',
+    'Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista',
+    'Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação',
+    'Elaborar proposta de intervenção para o problema abordado, respeitando os direitos humanos'
+  ];
+  function redPrompt(rec) {
+    var r = rec.red || {};
+    return 'Você é um corretor experiente da redação do ENEM. Corrija o texto abaixo com a matriz oficial de 5 competências. Cada competência vale 0, 40, 80, 120, 160 ou 200 pontos (total de 0 a 1000). ' +
+      'Dê nota zero na redação inteira se houver fuga total ao tema, texto que não seja dissertativo-argumentativo, cópia dos textos motivadores ou menos de 7 linhas. Seja rigoroso e justo como a banca, e justifique cada nota citando trechos do texto.\n\n' +
+      COMPS.map(function (c, i) { return 'Competência ' + (i + 1) + ': ' + c; }).join('\n') + '\n\n' +
+      'Responda SOMENTE com um JSON válido, sem texto antes ou depois, neste formato:\n' +
+      '{"competencias":[{"competencia":1,"nota":160,"justificativa":"..."},{"competencia":2,"nota":120,"justificativa":"..."},{"competencia":3,"nota":120,"justificativa":"..."},{"competencia":4,"nota":160,"justificativa":"..."},{"competencia":5,"nota":120,"justificativa":"..."}],' +
+      '"nota_total":680,"pontos_fortes":["..."],"melhorias":["..."],"comentario_geral":"..."}\n\n' +
+      'TEMA: ' + (r.theme || '(não informado)') + '\n\nTEXTO DO PARTICIPANTE:\n' + (r.text || '');
+  }
+  function redParse(txt) {
+    var a = String(txt).indexOf('{'), b = String(txt).lastIndexOf('}'); if (a < 0 || b <= a) throw new Error('não encontrei o JSON na resposta');
+    var j = JSON.parse(String(txt).slice(a, b + 1)), cs = j.competencias || j.competencies;
+    if (!Array.isArray(cs) || cs.length !== 5) throw new Error('o JSON precisa ter as 5 competências');
+    var comp = [], just = [];
+    cs.forEach(function (c) { var n = Math.round(Number(c.nota) / 40) * 40; if (!isFinite(n)) throw new Error('nota inválida'); comp.push(Math.min(200, Math.max(0, n))); just.push(String(c.justificativa || '')); });
+    return { comp: comp, just: just, fortes: [].concat(j.pontos_fortes || []), melhorias: [].concat(j.melhorias || []), geral: String(j.comentario_geral || '') };
+  }
+  function redApply(rec, p, src) {
+    rec.red = rec.red || {}; rec.red.comp = p.comp; rec.red.fb = { just: p.just || [], fortes: p.fortes || [], melhorias: p.melhorias || [], geral: p.geral || '' }; rec.red.src = src; rec.red.ts = Date.now(); save();
+  }
+  function apiKey() { try { return localStorage.getItem('estudos_anthropic_key') || ''; } catch (e) { return ''; } }
+  async function redApi(rec) {
+    var k = apiKey(); if (!k) throw new Error('cadastre a chave da API');
+    var r = await fetch('https://api.anthropic.com/v1/messages', { method: 'POST', headers: { 'content-type': 'application/json', 'x-api-key': k, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+      body: JSON.stringify({ model: 'claude-sonnet-5-5', max_tokens: 3000, messages: [{ role: 'user', content: redPrompt(rec) }] }) });
+    if (r.status === 401) throw new Error('chave da API inválida');
+    if (!r.ok) throw new Error('a API respondeu ' + r.status);
+    var j = await r.json(); return (j.content || []).map(function (c) { return c.text || ''; }).join('');
+  }
+
+  /* ---------- páginas ---------- */
+  function pageSim() {
+    var rec = S.ui.simView ? simRec(S.ui.simView) : null;
+    if (!rec) { S.ui.simView = null; return simHome(); }
+    if (!SQ[rec.year]) { simEnsure(rec.year); return '<h1>Simulados</h1><div class="panel w"><div class="empty">Carregando a prova de ' + rec.year + '…</div>' + (SIMX.err ? '<div class="err">' + esc(SIMX.err) + '</div><div class="mact"><button class="btn ghost" data-sm="back">Voltar</button></div>' : '') + '</div>'; }
+    return rec.status === 'done' ? simResult(rec) : simTake(rec);
+  }
+  function chips(rec) {
+    var A = (rec.res && rec.res.areas) || {};
+    return ['LC', 'CH', 'CN', 'MT'].filter(function (a) { return A[a]; }).map(function (a) {
+      return '<span class="tag smc" style="--c:var(' + SAR[a].v + ')">' + SAR[a].s + ' ' + A[a].ok + '/' + A[a].tot + (A[a].score != null ? ' · ' + Math.round(A[a].score) : '') + '</span>';
+    }).join('');
+  }
+  function simHome() {
+    var pf = S.ui.simPref || { y: 0, d: 'all', l: 'ingles' }, ys = SIMX.years || YFALL, L = SIM().list.slice().reverse();
+    if (!SIMX.years && !SIMX.yl) { SIMX.yl = true; simYears().then(function () { SIMX.yl = false; if (S.ui.page === 'sim' && !S.ui.simView && !$('#sm-year:focus')) render(); }); }
+    var tri = TRID ? Object.keys(TRID.years).sort() : null; if (!TRID) triGet().then(function () { if (S.ui.page === 'sim') render(); });
+    var run = L.filter(function (r) { return r.status === 'run'; }), done = L.filter(function (r) { return r.status === 'done'; });
+    var row = function (r) {
+      var m = simMedia(r), rs = r.status === 'run';
+      return '<div class="panel w smi"><div class="smih"><div><b class="disp">' + esc(simTitle(r)) + '</b><div class="muted" style="font-size:12px">' + dmy(r.date) + (rs ? ' · ' + Object.keys(r.ans).length + ' respondidas' : '') + '</div></div>' +
+        (m ? '<div class="smm"><span class="muted">Média</span><b>' + Math.round(m.v) + '</b></div>' : '') + '</div>' + (rs ? '' : '<div class="row" style="gap:6px;margin:8px 0">' + chips(r) + (redTotal(r) != null ? '<span class="tag smc" style="--c:var(--s5)">Redação ' + redTotal(r) + '</span>' : '') + '</div>') +
+        '<div class="row"><button class="btn sm" data-sm="open" data-id="' + r.id + '">' + (rs ? 'Continuar' : 'Ver resultado') + '</button><button class="btn sm ghost" data-sm="askdel" data-id="' + r.id + '">Excluir</button></div></div>';
+    };
+    return '<h1>Simulados</h1><div class="panel w"><h3 style="margin:0 0 10px">Novo simulado do ENEM</h3><div class="fgrid">' +
+      '<div><label class="f">Ano da prova</label><select class="inp" id="sm-year">' + ys.map(function (y) { return '<option' + ((pf.y || ys[0]) === y ? ' selected' : '') + '>' + y + '</option>'; }).join('') + '</select></div>' +
+      '<div><label class="f">Aplicação</label><select class="inp" id="sm-days">' + opts([['all', 'Os dois dias'], ['1', 'Dia 1'], ['2', 'Dia 2']], pf.d) + '</select></div>' +
+      '<div><label class="f">Língua estrangeira</label><select class="inp" id="sm-lang">' + opts([['ingles', 'Inglês'], ['espanhol', 'Espanhol']], pf.l) + '</select></div></div>' +
+      '<p class="muted" style="font-size:12px;margin:10px 0 0">Cada dia tem 90 questões objetivas (45 por área). A redação acompanha o dia de Linguagens. As provas vêm de api.enem.dev e ficam salvas no aparelho.</p>' +
+      '<div class="row" style="margin-top:12px"><button class="btn" data-sm="start"' + (SIMX.busy ? ' disabled' : '') + '>Iniciar simulado</button></div>' +
+      '<div class="muted" id="sm-status" style="font-size:12px;margin-top:8px">' + esc(SIMX.busy ? 'Preparando…' : '') + '</div>' + (SIMX.err ? '<div class="err">' + esc(SIMX.err) + '</div>' : '') + '</div>' +
+      '<div class="panel w smtri"><h3 style="margin:0 0 6px">Parâmetros da TRI (INEP)</h3><p class="muted" style="font-size:12px;margin:0 0 10px">A nota por TRI usa os parâmetros a, b e c de cada questão, publicados pelo INEP. Importe uma vez o arquivo <b>ITENS_PROVA_AAAA.csv</b> de cada ano que for usar. Sem ele o simulado mostra os acertos, mas a TRI fica em “—”.</p>' +
+      '<div class="row" style="gap:6px">' + (tri && tri.length ? tri.map(function (y) { return '<span class="tag imp-baixa">' + y + ' · ' + TRID.years[y].rows.length + ' itens</span>'; }).join('') : '<span class="muted" style="font-size:12px">Nenhum ano importado.</span>') + '</div>' +
+      '<div class="row" style="margin-top:10px"><button class="btn sm" data-sm="triimp">Importar CSV do INEP</button><input type="file" id="sm-tri-file" accept=".csv,.txt,text/csv" multiple hidden></div>' +
+      (SIMX.msg ? '<div class="muted" style="font-size:12px;margin-top:8px">' + esc(SIMX.msg) + '</div>' : '') +
+      '<details class="mdet" style="margin-top:10px"><summary>Onde encontrar o arquivo</summary><p class="muted" style="font-size:12px;margin:6px 0 0">No portal do INEP, em Microdados do ENEM, baixe o ZIP do ano. Dentro da pasta DADOS fica o ITENS_PROVA_AAAA.csv, que é pequeno: extraia só ele. Pode selecionar vários anos de uma vez. Mantenha o ano no nome do arquivo.</p></details></div>' +
+      (run.length ? '<h2>Em andamento</h2>' + run.map(row).join('') : '') +
+      '<h2>Concluídos</h2>' + (done.length ? done.map(row).join('') : '<div class="empty">Nenhum simulado concluído. Inicie o primeiro acima.</div>');
+  }
+  function simTake(rec) {
+    var all = simQs(rec), areas = simAreas(rec, all), hasR = simHasRed(rec), T = TABS(), U = S.ui;
+    var tabs = areas.map(function (a) { return [a, SAR[a].s]; }).concat(hasR ? [['RED', 'Redação']] : []);
+    if (!tabs.some(function (t) { return t[0] === T.simA; })) T.simA = tabs[0][0];
+    if (U.simAP !== T.simA) { U.simAP = T.simA; U.simN = 0; }
+    var cur = T.simA, nA = Object.keys(rec.ans).length, body;
+    if (cur === 'RED') body = simRedEdit(rec);
+    else {
+      var list = all.filter(function (q) { return q.a === cur; }), n = Math.min(Math.max(0, U.simN || 0), list.length - 1), q = list[n];
+      var nav = list.map(function (x, k) { return '<button class="smn' + (rec.ans[x.id] ? ' d' : '') + (k === n ? ' on' : '') + '" data-sm="go" data-n="' + k + '">' + (k + 1) + '</button>'; }).join('');
+      body = '<div class="smnav">' + nav + '</div><div class="panel w"><div class="row"><span class="tag" style="background:var(' + SAR[cur].v + ');color:#fff">' + SAR[cur].s + ' · questão ' + (n + 1) + ' de ' + list.length + '</span><span class="muted" style="font-size:11px">nº ' + q.i + ' da prova</span></div>' +
+        (q.t ? '<div class="qtx"><b>' + qhtml(q.t) + '</b></div>' : '') + '<div class="qtx">' + qhtml(q.x) + '</div>' + (q.n ? '<div class="qtx"><b>' + qhtml(q.n) + '</b></div>' : '') +
+        q.al.map(function (al) { return '<button class="qalt' + (rec.ans[q.id] === al.l ? ' sel' : '') + '" data-sm="pick" data-id="' + esc(q.id) + '" data-l="' + esc(al.l) + '"><b>' + esc(al.l) + '</b>' + qhtml(al.t) + (/^https:/.test(al.f) ? '<img loading="lazy" src="' + esc(al.f) + '" alt="">' : '') + '</button>'; }).join('') +
+        '<div class="row" style="justify-content:space-between;margin-top:12px"><button class="btn ghost sm" data-sm="prev"' + (n === 0 ? ' disabled' : '') + '>Anterior</button>' +
+        (rec.ans[q.id] ? '<button class="btn ghost sm" data-sm="clear" data-id="' + esc(q.id) + '">Limpar resposta</button>' : '') + '<button class="btn sm" data-sm="next"' + (n >= list.length - 1 ? ' disabled' : '') + '>Próxima</button></div></div>';
+    }
+    return '<h1>' + esc(simTitle(rec)) + '</h1><div class="panel w smbar"><div class="row" style="justify-content:space-between"><div><b class="disp" id="sm-cnt">' + nA + ' de ' + all.length + '</b><span class="muted"> respondidas</span></div>' +
+      '<div class="smtm" id="sm-timer">' + hms(rec.sec || 0) + '</div></div><div class="bar" style="margin-top:8px"><i style="width:' + (all.length ? Math.round(nA / all.length * 100) : 0) + '%"></i></div></div>' +
+      segHTML('simA', tabs) + body + '<div class="row" style="margin-top:14px"><button class="btn" data-sm="askfinish">Finalizar simulado</button><button class="btn ghost" data-sm="back">Salvar e sair</button></div>';
+  }
+  function words(t) { t = String(t || '').trim(); return t ? t.split(/\s+/).length : 0; }
+  function redCount(t) { var c = String(t || '').length; return words(t) + ' palavras · ' + c + ' caracteres · cerca de ' + Math.ceil(c / 80) + ' linhas'; }
+  function simRedEdit(rec) {
+    var r = rec.red = rec.red || { theme: '', text: '' };
+    return '<div class="panel w"><h3 style="margin:0 0 8px">Redação</h3><label class="f">Tema da proposta</label><input class="inp" id="sm-rtheme" maxlength="200" value="' + esc(r.theme) + '" placeholder="Cole aqui o tema do ENEM ' + rec.year + '">' +
+      '<label class="f" style="margin-top:10px">Seu texto dissertativo-argumentativo</label><textarea class="inp smrt" id="sm-rt" rows="16" placeholder="Escreva entre 7 e 30 linhas. A correção por competências fica disponível ao finalizar o simulado.">' + esc(r.text) + '</textarea>' +
+      '<div class="muted" id="sm-rc" style="font-size:12px;margin-top:6px">' + redCount(r.text) + '</div></div>';
+  }
+  function redBlock(rec) {
+    var r = rec.red || {}, rt = redTotal(rec);
+    var head = '<h2>Redação</h2><div class="panel w">';
+    if (!String(r.text || '').trim() && rt == null) return head + '<div class="empty">Você não escreveu a redação neste simulado. Ela não entra na média.</div><div class="row" style="justify-content:center"><button class="btn sm" data-sm="rededit">Escrever agora</button></div></div>';
+    var txt = '<div class="smrtx">' + esc(r.text || '').replace(/\n/g, '<br>') + '</div><div class="muted" style="font-size:12px;margin:6px 0 10px">' + (r.theme ? 'Tema: ' + esc(r.theme) + ' · ' : '') + redCount(r.text) + '</div>';
+    if (rt == null) {
+      return head + txt + '<p class="muted" style="font-size:12px;margin:0 0 8px">A banca do ENEM usa duas correções humanas. Aqui a nota é uma estimativa por competência.</p>' +
+        '<div class="row" style="gap:8px"><button class="btn sm" data-sm="redcopy">Copiar pedido para o Claude</button><button class="btn sm ghost" data-sm="redpaste">Colar a correção</button>' +
+        (apiKey() ? '<button class="btn sm ghost" data-sm="redapi">Corrigir pela API</button>' : '') + '<button class="btn sm ghost" data-sm="redmanual">Lançar notas</button><button class="btn sm ghost" data-sm="rededit">Editar texto</button></div>' + redKeyBox() + '</div>';
+    }
+    var fb = r.fb || {};
+    return head + '<div class="smrtot"><b>' + rt + '</b><span class="muted"> / 1000' + (r.src ? ' · ' + ({ claude: 'corrigida pelo Claude', api: 'corrigida pela API', manual: 'notas lançadas por você' }[r.src] || '') : '') + '</span></div>' +
+      r.comp.map(function (c, i) { return '<div class="smcomp"><div class="row" style="justify-content:space-between"><span>C' + (i + 1) + ' · ' + esc(COMPS[i].split(' ').slice(0, 5).join(' ')) + '…</span><b>' + c + '</b></div><div class="bar"><i style="width:' + c / 2 + '%"></i></div>' +
+        (fb.just && fb.just[i] ? '<div class="muted" style="font-size:12px;margin-top:4px">' + esc(fb.just[i]) + '</div>' : '') + '</div>'; }).join('') +
+      (fb.geral ? '<p style="font-size:13px">' + esc(fb.geral) + '</p>' : '') +
+      (fb.fortes && fb.fortes.length ? '<b style="font-size:13px">Pontos fortes</b><ul class="smul">' + fb.fortes.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      (fb.melhorias && fb.melhorias.length ? '<b style="font-size:13px">Para melhorar</b><ul class="smul">' + fb.melhorias.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      '<details class="mdet" style="margin-top:8px"><summary>Ver meu texto</summary>' + txt + '</details><div class="row"><button class="btn sm ghost" data-sm="redclear">Refazer a correção</button></div></div>';
+  }
+  function redKeyBox() {
+    return '<details class="mdet" style="margin-top:12px"><summary>Correção automática pela API (opcional)</summary><p class="muted" style="font-size:12px;margin:6px 0">Cole uma chave da API da Anthropic para corrigir sem sair do app. O uso é cobrado na sua conta da Anthropic. A chave fica só neste navegador e não entra no backup.</p>' +
+      '<div class="row"><input class="inp" type="password" id="sm-key" placeholder="sk-ant-…" value="' + esc(apiKey()) + '" style="flex:1;min-width:180px"><button class="btn sm" data-sm="keysave">Salvar chave</button>' + (apiKey() ? '<button class="btn sm ghost" data-sm="keyclear">Remover</button>' : '') + '</div></details>';
+  }
+  function simResult(rec) {
+    var res = rec.res || { areas: {} }, A = res.areas, m = simMedia(rec), U = S.ui, rv = U.simRv = U.simRv || { a: 'ALL', w: true, lim: 10 }, all = simQs(rec), rt = redTotal(rec);
+    var tiles = '<div class="tiles" style="margin-top:0"><div class="tile t-mint"><div class="l">Média das notas</div><div class="v">' + (m ? Math.round(m.v) : '—') + '</div><span class="s">' + (m ? m.n + ' nota' + (m.n > 1 ? 's' : '') + ' na média' : 'sem TRI nem redação') + '</span></div>' +
+      '<div class="tile t-blue"><div class="l">Acertos</div><div class="v">' + Object.keys(A).reduce(function (s, a) { return s + A[a].ok; }, 0) + '/' + Object.keys(A).reduce(function (s, a) { return s + A[a].tot; }, 0) + '</div><span class="s">' + Math.round(((rec.sec || 0) / 60)) + ' min de prova</span></div>' +
+      (simHasRed(rec) ? '<div class="tile t-pink"><div class="l">Redação</div><div class="v">' + (rt == null ? '—' : rt) + '</div><span class="s">' + (rt == null ? 'aguardando correção' : 'de 1000') + '</span></div>' : '') + '</div>';
+    var tb = Object.keys(A).map(function (a) {
+      var r = A[a];
+      return '<div class="panel w smarea"><div class="row" style="justify-content:space-between"><b class="disp" style="color:var(' + SAR[a].v + ')">' + SAR[a].n + '</b><span class="smsc">' + (r.score != null ? '<b>' + Math.round(r.score) + '</b><small> ± ' + Math.round(r.ep) + '</small>' : '<b>—</b>') + '</span></div>' +
+        '<div class="row" style="justify-content:space-between;margin:6px 0 4px"><span><b style="font-size:18px">' + r.ok + '</b> acertos de ' + r.tot + '</span><span class="muted" style="font-size:12px">' + r.blank + ' em branco' + (r.np != null && r.np < r.tot ? ' · TRI com ' + r.np + ' itens' : '') + '</span></div><div class="bar"><i style="width:' + (r.tot ? Math.round(r.ok / r.tot * 100) : 0) + '%;background:var(' + SAR[a].v + ')"></i></div></div>';
+    }).join('');
+    var warn = res.why ? '<div class="panel w smwarn"><b>TRI indisponível.</b> ' + esc(res.why) + ' <button class="btn sm ghost" data-sm="back">Ir para importação</button></div>' : '';
+    var rl = all.filter(function (q) { return (rv.a === 'ALL' || q.a === rv.a) && (!rv.w || rec.ans[q.id] !== q.k); });
+    var rev = rl.slice(0, rv.lim).map(function (q) {
+      var u = rec.ans[q.id];
+      return '<div class="panel w" style="margin-bottom:10px"><div class="row"><span class="tag" style="background:var(' + SAR[q.a].v + ');color:#fff">' + SAR[q.a].s + ' · nº ' + q.i + '</span><span class="tag ' + (u === q.k ? 'imp-baixa' : 'imp-alta') + '">' + (u === q.k ? 'Acertou' : (u ? 'Errou' : 'Em branco') + ' · gabarito ' + esc(q.k)) + '</span></div>' +
+        (q.t ? '<div class="qtx"><b>' + qhtml(q.t) + '</b></div>' : '') + '<div class="qtx">' + qhtml(q.x) + '</div>' + (q.n ? '<div class="qtx"><b>' + qhtml(q.n) + '</b></div>' : '') +
+        q.al.map(function (al) { return '<div class="qalt ' + (al.l === q.k ? 'ok' : (al.l === u ? 'no' : '')) + '"><b>' + esc(al.l) + '</b>' + qhtml(al.t) + (/^https:/.test(al.f) ? '<img loading="lazy" src="' + esc(al.f) + '" alt="">' : '') + '</div>'; }).join('') + '</div>';
+    }).join('');
+    return '<h1>' + esc(simTitle(rec)) + '</h1><div class="row" style="margin:-6px 0 12px"><span class="muted" style="font-size:12px">' + dmy(rec.date) + '</span><span class="spacer"></span><button class="btn sm ghost" data-sm="back">Voltar</button><button class="btn sm ghost" data-sm="recalc">Recalcular</button></div>' +
+      tiles + warn + tb + (simHasRed(rec) ? redBlock(rec) : '') +
+      '<details class="mdet panel w" style="margin-top:14px"><summary>Como a nota é calculada</summary><p class="muted" style="font-size:12.5px;margin:6px 0 0">Cada área usa o modelo logístico de 3 parâmetros do INEP, com os valores a, b e c de cada questão, e estima a proficiência por EAP. A nota é 500 + 100 × θ. Questões em branco contam como erro e questões anuladas ficam de fora. ' +
+      'É uma estimativa: o INEP calibra a escala com a população de cada edição, então a nota oficial pode diferir um pouco. O valor depois do ± é o erro-padrão da estimativa. A média soma as áreas com TRI e a redação, quando existem.</p></details>' +
+      '<h2>Revisão das questões</h2><div class="row" style="gap:8px;margin-bottom:10px"><select class="inp" id="sm-rva" style="max-width:200px">' + opts([['ALL', 'Todas as áreas']].concat(Object.keys(A).map(function (a) { return [a, SAR[a].s]; })), rv.a) + '</select>' +
+      '<label class="row" style="gap:6px"><input type="checkbox" id="sm-rvw"' + (rv.w ? ' checked' : '') + '> só erradas e em branco</label></div>' +
+      (rev || '<div class="empty">Nenhuma questão neste filtro.</div>') + (rl.length > rv.lim ? '<div class="row" style="justify-content:center"><button class="btn ghost" data-sm="rvmore">Mostrar mais (' + (rl.length - rv.lim) + ')</button></div>' : '');
+  }
+
+  /* ---------- análise: tabela e gráficos de evolução ---------- */
+  function simDone() { return SIM().list.filter(function (r) { return r.status === 'done' && r.res; }).sort(function (a, b) { return (a.finished || 0) - (b.finished || 0); }); }
+  function niceTicks(lo, hi, st) { var t = []; for (var v = lo; v <= hi + 1e-9; v += st) t.push(v); return t; }
+  function vzLine(id, labels, series, o) {
+    var W = 400, H = 250, ml = 34, mr = 30, mt = 12, mb = 28, w = W - ml - mr, h = H - mt - mb, n = labels.length, vals = [];
+    series.forEach(function (s) { s.v.forEach(function (x) { if (x != null) vals.push(x); }); });
+    if (!vals.length) return '<div class="empty">Sem dados para este gráfico ainda.</div>';
+    var lo = o.min != null ? o.min : Math.floor((Math.min.apply(0, vals) - 30) / 100) * 100, hi = o.max != null ? o.max : Math.ceil((Math.max.apply(0, vals) + 30) / 100) * 100, st = o.step || (hi - lo <= 300 ? 50 : 100);
+    var X = function (i) { return ml + (n === 1 ? w / 2 : i * w / (n - 1)); }, Y = function (v) { return mt + h - (v - lo) / (hi - lo) * h; }, g = '';
+    niceTicks(lo, hi, st).forEach(function (t) { g += '<line class="vzg" x1="' + ml + '" x2="' + (W - mr) + '" y1="' + Y(t) + '" y2="' + Y(t) + '"/><text class="vzt" x="' + (ml - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end">' + t + '</text>'; });
+    var step = Math.ceil(n / 5);
+    labels.forEach(function (l, i) { if (i % step === 0 || i === n - 1) g += '<text class="vzt" x="' + X(i) + '" y="' + (H - 8) + '" text-anchor="middle">' + esc(l) + '</text>'; });
+    var lbl = [];
+    series.forEach(function (s) {
+      var d = '', pen = false, last = -1;
+      s.v.forEach(function (x, i) { if (x == null) { pen = false; return; } d += (pen ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(x).toFixed(1); pen = true; last = i; });
+      g += '<path d="' + d + '" fill="none" stroke="' + s.c + '" stroke-width="' + (s.m ? 2.5 : 2) + '" stroke-linecap="round" stroke-linejoin="round"' + (s.d ? ' stroke-dasharray="6 5"' : '') + '/>';
+      s.v.forEach(function (x, i) { if (x != null) g += '<circle class="vzp" cx="' + X(i).toFixed(1) + '" cy="' + Y(x).toFixed(1) + '" r="4" fill="' + s.c + '"/>'; });
+      if (last >= 0) { var ly = Y(s.v[last]), lx = X(last); if (!lbl.some(function (q) { return Math.abs(q[0] - lx) < 30 && Math.abs(q[1] - ly) < 12; })) { lbl.push([lx, ly]); g += '<text class="vzl2" x="' + (lx + 8) + '" y="' + (ly + 4) + '">' + esc(s.code) + '</text>'; } }
+    });
+    g += '<line class="vz-cross" x1="0" x2="0" y1="' + mt + '" y2="' + (mt + h) + '" style="display:none"/>';
+    var bw = n === 1 ? w : w / (n - 1);
+    labels.forEach(function (l, i) { g += '<rect class="vz-hit" data-i="' + i + '" x="' + (X(i) - bw / 2) + '" y="' + mt + '" width="' + bw + '" height="' + h + '" fill="transparent"/>'; });
+    VZD[id] = { labels: labels, series: series, W: W, xs: labels.map(function (l, i) { return X(i); }), fmt: o.fmt || function (v) { return Math.round(v); } };
+    var leg = series.map(function (s) { return '<span class="vzlg"><i style="background:' + s.c + (s.d ? ';height:0;border-top:2px dashed ' + s.c + ';background:none' : '') + '"></i>' + esc(s.n) + '</span>'; }).join('');
+    return '<div class="vz" id="' + id + '"><div class="vzleg">' + leg + '</div><svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(o.title) + '">' + g + '</svg><div class="vz-tip"></div></div>';
+  }
+  function pageSimAnalysis() {
+    var L = simDone();
+    if (!L.length) return '<div class="panel w"><div class="empty">Ainda não há simulados concluídos. Termine um simulado para ver as notas e a evolução aqui.</div><div class="row" style="justify-content:center"><button class="btn" data-a="nav" data-p="sim">Fazer um simulado</button></div></div>';
+    var last = L[L.length - 1], best = 0, redL = null, mL = simMedia(last);
+    L.forEach(function (r) { var m = simMedia(r); if (m && m.v > best) best = m.v; if (redTotal(r) != null) redL = redTotal(r); });
+    var lb = L.map(function (r) { return dmy(r.date).slice(0, 5); }), nm = L.map(function (r) { return simTitle(r) + ' · ' + dmy(r.date); });
+    var acs = ['LC', 'CH', 'CN', 'MT'].map(function (a, i) { return { n: SAR[a].s, code: a, c: 'var(--s' + (i + 1) + ')', v: L.map(function (r) { var x = r.res.areas[a]; return x ? x.ok : null; }) }; }).filter(function (s) { return s.v.some(function (x) { return x != null; }); });
+    var prs = ['LC', 'CH', 'CN', 'MT'].map(function (a, i) { return { n: SAR[a].s, code: a, c: 'var(--s' + (i + 1) + ')', v: L.map(function (r) { var x = r.res.areas[a]; return x && x.score != null ? x.score : null; }) }; }).filter(function (s) { return s.v.some(function (x) { return x != null; }); });
+    prs.push({ n: 'Redação', code: 'RED', c: 'var(--s5)', v: L.map(function (r) { return redTotal(r); }) });
+    prs.push({ n: 'Média', code: 'MÉD', c: 'var(--vzink)', d: true, m: true, v: L.map(function (r) { var m = simMedia(r); return m ? m.v : null; }) });
+    prs = prs.filter(function (s) { return s.v.some(function (x) { return x != null; }); });
+    VZN = nm;
+    var cell = function (r, a) { var x = r.res.areas[a]; return x ? '<td><b>' + (x.score != null ? Math.round(x.score) : '—') + '</b><small>' + x.ok + '/' + x.tot + '</small></td>' : '<td class="muted">—</td>'; };
+    var rows = L.slice().reverse().map(function (r) {
+      var m = simMedia(r), rt = redTotal(r);
+      return '<tr data-sm="open" data-id="' + r.id + '" class="smrow"><td><b>' + esc(simTitle(r)) + '</b><small>' + dmy(r.date) + '</small></td>' + cell(r, 'LC') + cell(r, 'CH') + cell(r, 'CN') + cell(r, 'MT') + '<td>' + (rt != null ? '<b>' + rt + '</b>' : '<span class="muted">—</span>') + '</td><td>' + (m ? '<b>' + Math.round(m.v) + '</b>' : '<span class="muted">—</span>') + '</td></tr>';
+    }).join('');
+    return '<div class="tiles" style="margin-top:0"><div class="tile t-blue"><div class="l">Simulados feitos</div><div class="v">' + L.length + '</div></div><div class="tile t-mint"><div class="l">Média do último</div><div class="v">' + (mL ? Math.round(mL.v) : '—') + '</div></div>' +
+      '<div class="tile t-yellow"><div class="l">Melhor média</div><div class="v">' + (best ? Math.round(best) : '—') + '</div></div><div class="tile t-pink"><div class="l">Última redação</div><div class="v">' + (redL != null ? redL : '—') + '</div></div></div>' +
+      '<h2>Evolução dos acertos</h2><div class="panel w">' + vzLine('vz-ac', lb, acs, { min: 0, max: 45, step: 15, title: 'Acertos por área em cada simulado' }) + '</div>' +
+      '<h2>Evolução da proficiência (TRI)</h2><div class="panel w">' + vzLine('vz-pr', lb, prs, { title: 'Nota por área, redação e média em cada simulado' }) +
+      '<p class="muted" style="font-size:11.5px;margin:8px 0 0">Notas por TRI aparecem só nos simulados com parâmetros do INEP importados. A linha pontilhada é a média das notas disponíveis.</p></div>' +
+      '<h2>Todas as pontuações</h2><div class="panel w"><div class="smscr" data-keep><table class="smtbl"><thead><tr><th>Simulado</th><th>Linguagens</th><th>Humanas</th><th>Natureza</th><th>Matemática</th><th>Redação</th><th>Média</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
+      '<p class="muted" style="font-size:11.5px;margin:8px 0 0">Cada célula mostra a nota por TRI e, abaixo, os acertos. Toque numa linha para abrir o simulado.</p></div>';
+  }
+  var VZN = [];
+
+  /* ---------- eventos ---------- */
+  function simFile(f) {
+    return new Promise(function (ok, no) {
+      var r = new FileReader(); r.onerror = function () { no(new Error('não consegui ler')); };
+      r.onload = function () { var b = r.result, t = new TextDecoder('utf-8').decode(b); if (t.indexOf('�') >= 0) t = new TextDecoder('windows-1252').decode(b); ok(t); };
+      r.readAsArrayBuffer(f);
+    });
+  }
+  async function simTriImport(files) {
+    var d = await triGet(), ok = [], bad = [], ys = [];
+    for (var i = 0; i < files.length; i++) {
+      try { var r = triParse(await simFile(files[i]), files[i].name); d.years[r.year] = r; ys.push(r.year); ok.push(r.year); }
+      catch (e) { bad.push(files[i].name + ': ' + e.message); }
+    }
+    if (ok.length) await kv('set', 'tri', d);
+    for (var k = 0; k < SIM().list.length; k++) { var rc = SIM().list[k]; if (rc.status === 'done' && ys.indexOf(rc.year) >= 0) { try { await simCompute(rc); } catch (e) {} } }
+    SIMX.msg = (ok.length ? 'Importado: ' + ok.join(', ') + '. ' : '') + (bad.length ? 'Não importou: ' + bad.join(' | ') : '');
+    save(); render();
+  }
+  function modalText(title, text, acts) { openModal('<h3>' + title + '</h3>' + text + '<div class="mact">' + acts + '</div>'); }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-sm]'); if (!b) return;
+    var a = b.dataset.sm, U = S.ui, rec = U.simView ? simRec(U.simView) : null, id = b.dataset.id;
+    if (a === 'start') { simStart(); return; }
+    if (a === 'open') { var r2 = simRec(id); if (!r2) return; if (U.page !== 'sim') U.page = 'sim'; U.simView = id; U.simN = 0; U.simAP = null; TABS().simA = null; U.simRv = null; save(); render(); window.scrollTo(0, 0); return; }
+    if (a === 'back') { U.simView = null; save(); render(); window.scrollTo(0, 0); return; }
+    if (a === 'triimp') { $('#sm-tri-file').click(); return; }
+    if (a === 'askdel') { modalText('Excluir simulado?', '<p>Isso apaga as respostas, as notas e a redação deste simulado.</p>', '<button class="btn ghost" data-a="closeModal">Cancelar</button><button class="btn danger" data-sm="del" data-id="' + id + '">Excluir</button>'); return; }
+    if (a === 'del') { S.sim.list = SIM().list.filter(function (x) { return x.id !== id; }); if (U.simView === id) U.simView = null; closeModal(); save(); render(); return; }
+    if (!rec) return;
+    var all = simQs(rec), cur = TABS().simA;
+    if (a === 'pick') { rec.ans[id] = b.dataset.l; }
+    else if (a === 'clear') { delete rec.ans[id]; }
+    else if (a === 'go') { U.simN = +b.dataset.n; }
+    else if (a === 'prev') { U.simN = Math.max(0, (U.simN || 0) - 1); }
+    else if (a === 'next') { U.simN = (U.simN || 0) + 1; }
+    else if (a === 'askfinish') {
+      var left = all.length - Object.keys(rec.ans).length, nr = simHasRed(rec) && !String((rec.red || {}).text || '').trim();
+      modalText('Finalizar o simulado?', '<p>' + (left ? 'Faltam <b>' + left + '</b> questões sem resposta; elas contam como erro.' : 'Todas as questões foram respondidas.') + (nr ? ' Você ainda não escreveu a redação.' : '') + '</p>', '<button class="btn ghost" data-a="closeModal">Continuar</button><button class="btn" data-sm="finish">Finalizar</button>'); return;
+    }
+    else if (a === 'finish') {
+      closeModal(); rec.status = 'done'; rec.finished = Date.now(); save();
+      simCompute(rec).then(function () { save(); render(); window.scrollTo(0, 0); }).catch(function () { rec.res = { areas: {}, why: 'Não consegui calcular as notas.' }; save(); render(); }); return;
+    }
+    else if (a === 'recalc') { simCompute(rec).then(function () { save(); render(); }); return; }
+    else if (a === 'rvmore') { U.simRv.lim += 10; }
+    else if (a === 'rededit') { rec.status = 'run'; TABS().simA = 'RED'; save(); render(); return; }
+    else if (a === 'redcopy') {
+      modalText('Pedido de correção', '<p class="muted" style="font-size:12.5px">Copie, cole numa conversa com o Claude e traga a resposta de volta em “Colar a correção”.</p><textarea class="inp" id="sm-pr" rows="9" readonly>' + esc(redPrompt(rec)) + '</textarea><div class="err" id="f-err"></div>',
+        '<button class="btn ghost" data-a="closeModal">Fechar</button><button class="btn ghost" data-sm="redpaste">Colar a correção</button><button class="btn" data-sm="copyp">Copiar pedido</button>'); return;
+    }
+    else if (a === 'copyp') {
+      var ta = $('#sm-pr'), fin = function (ok) { $('#f-err').textContent = ok ? 'Pedido copiado.' : 'Não consegui copiar sozinho. Selecione o texto e copie.'; $('#f-err').style.color = ok ? 'var(--green)' : ''; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(function () { fin(true); }, function () { ta.select(); fin(false); }); else { ta.select(); fin(false); } return;
+    }
+    else if (a === 'redpaste') { modalText('Colar a correção', '<p class="muted" style="font-size:12.5px">Cole aqui a resposta do Claude (o JSON com as 5 competências).</p><textarea class="inp" id="sm-pj" rows="9" placeholder="{&quot;competencias&quot;: [ … ]}"></textarea><div class="err" id="f-err"></div>', '<button class="btn ghost" data-a="closeModal">Cancelar</button><button class="btn" data-sm="redapply">Aplicar notas</button>'); return; }
+    else if (a === 'redapply') { try { redApply(rec, redParse($('#sm-pj').value), 'claude'); closeModal(); } catch (x) { $('#f-err').textContent = 'Não consegui ler: ' + x.message + '.'; return; } }
+    else if (a === 'redapi') {
+      b.disabled = true; b.textContent = 'Corrigindo…';
+      redApi(rec).then(function (t) { redApply(rec, redParse(t), 'api'); render(); }).catch(function (x) { render(); modalText('Não deu para corrigir', '<p>' + esc(x.message) + '. Use “Copiar pedido para o Claude” como alternativa.</p>', '<button class="btn" data-a="closeModal">Ok</button>'); }); return;
+    }
+    else if (a === 'redmanual') {
+      modalText('Lançar notas da redação', '<div class="mgrid">' + COMPS.map(function (c, i) { return '<div class="full"><label class="f">C' + (i + 1) + ' · ' + esc(c.split(' ').slice(0, 6).join(' ')) + '…</label><select class="inp" id="sm-c' + i + '">' + [0, 40, 80, 120, 160, 200].map(function (v) { return '<option>' + v + '</option>'; }).join('') + '</select></div>'; }).join('') + '</div>',
+        '<button class="btn ghost" data-a="closeModal">Cancelar</button><button class="btn" data-sm="redsave">Salvar notas</button>'); return;
+    }
+    else if (a === 'redsave') { redApply(rec, { comp: [0, 1, 2, 3, 4].map(function (i) { return +$('#sm-c' + i).value; }) }, 'manual'); closeModal(); }
+    else if (a === 'redclear') { delete rec.red.comp; delete rec.red.fb; delete rec.red.src; }
+    else if (a === 'keysave') { try { localStorage.setItem('estudos_anthropic_key', $('#sm-key').value.trim()); } catch (x) {} }
+    else if (a === 'keyclear') { try { localStorage.removeItem('estudos_anthropic_key'); } catch (x) {} }
+    else return;
+    save(); render();
+  });
+  async function simStart() {
+    var y = +$('#sm-year').value, d = $('#sm-days').value, l = $('#sm-lang').value;
+    S.ui.simPref = { y: y, d: d, l: l }; SIMX.busy = 'x'; SIMX.err = ''; var bt = $('[data-sm="start"]'); if (bt) bt.disabled = true; simSt('Preparando…');
+    try {
+      await simLoadYear(y);
+      var rec = { id: uid('s'), year: y, days: d === '1' ? [1] : (d === '2' ? [2] : [1, 2]), lang: l, created: Date.now(), date: today(), ans: {}, sec: 0, status: 'run', red: { theme: '', text: '' } };
+      if (!simQs(rec).length) throw new Error('esta prova não tem questões para o dia escolhido');
+      SIM().list.push(rec); S.ui.simView = rec.id; S.ui.simN = 0; S.ui.simAP = null; TABS().simA = null; save();
+    } catch (e) { SIMX.err = 'Não foi possível montar o simulado: ' + e.message + '. Confira a internet e tente de novo.'; }
+    SIMX.busy = ''; render(); window.scrollTo(0, 0);
+  }
+  document.addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.id === 'sm-tri-file' && t.files.length) { simTriImport([].slice.call(t.files)); t.value = ''; }
+    else if (t.id === 'sm-rva') { S.ui.simRv = { a: t.value, w: (S.ui.simRv || {}).w !== false, lim: 10 }; save(); render(); }
+    else if (t.id === 'sm-rvw') { S.ui.simRv = { a: (S.ui.simRv || {}).a || 'ALL', w: t.checked, lim: 10 }; save(); render(); }
+  });
+  document.addEventListener('input', function (e) {
+    var t = e.target, rec = S.ui.simView ? simRec(S.ui.simView) : null; if (!rec || (t.id !== 'sm-rt' && t.id !== 'sm-rtheme')) return;
+    rec.red = rec.red || {}; if (t.id === 'sm-rt') { rec.red.text = t.value; var c = $('#sm-rc'); if (c) c.textContent = redCount(t.value); } else rec.red.theme = t.value;
+    clearTimeout(SMT); SMT = setTimeout(save, 400);
+  });
+  setInterval(function () {
+    var rec = S && S.ui && S.ui.page === 'sim' && S.ui.simView ? simRec(S.ui.simView) : null;
+    if (!rec || rec.status !== 'run' || document.hidden) return;
+    rec.sec = (rec.sec || 0) + 1; var el = $('#sm-timer'); if (el) el.textContent = hms(rec.sec); if (rec.sec % 15 === 0) save();
+  }, 1000);
+  /* dica ao passar o dedo ou o mouse nos gráficos */
+  document.addEventListener('pointermove', function (e) {
+    var h = e.target.closest && e.target.closest('.vz-hit');
+    [].forEach.call(document.querySelectorAll('.vz'), function (v) { if (!h || !v.contains(h)) { v.querySelector('.vz-tip').style.display = 'none'; v.querySelector('.vz-cross').style.display = 'none'; } });
+    if (!h) return;
+    var v = h.closest('.vz'), d = VZD[v.id]; if (!d) return; var i = +h.dataset.i, tip = v.querySelector('.vz-tip'), cr = v.querySelector('.vz-cross'), x = d.xs[i];
+    cr.setAttribute('x1', x); cr.setAttribute('x2', x); cr.style.display = '';
+    tip.innerHTML = '<b>' + esc(VZN[i] || d.labels[i]) + '</b>' + d.series.map(function (s) { return s.v[i] == null ? '' : '<div><i style="background:' + s.c + '"></i>' + esc(s.n) + ' <b>' + d.fmt(s.v[i]) + '</b></div>'; }).join('');
+    tip.style.display = 'block'; var p = x / d.W * 100; tip.style.left = Math.min(Math.max(p, 22), 78) + '%';
+  });
+
 
   /* ---------- início ---------- */
   load();
